@@ -15,7 +15,7 @@ export const Items = () => {
       dispatch(getAllItems());
       dispatch(getAllSales());
     }
-  }, []);
+  }, [dispatch]);
 
   const handleUpdate = (itemId) => {
     dispatch(setItemToBeUpdated(itemId));

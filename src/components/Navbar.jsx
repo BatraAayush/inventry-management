@@ -1,10 +1,7 @@
 import { NavLink } from "react-router-dom";
-import { useDispatch } from "react-redux";
 
 
 export const Navbar = () => {
-  const dispatch = useDispatch();
-
   return (
     <nav className="px-4 py-3 flex justify-between flex-wrap border-solid border-4 border-black-600 rounded-b-md">
       <h1 className={`black`}>

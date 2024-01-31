@@ -21,7 +21,7 @@ export const SaleForm = () => {
     return function () {
       dispatch({ type: RESET_SALE });
     };
-  }, []);
+  }, [dispatch]);
 
   const handleAddSale = () => {
     dispatch(addNewSale(userInput));

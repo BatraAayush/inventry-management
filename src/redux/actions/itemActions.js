@@ -82,7 +82,7 @@ export const removeItem = (itemId) => async (dispatch) => {
   try {
     dispatch({ type: SET_ITEM_LOADING });
 
-    const deletedItem = await deleteItem(itemId);
+    await deleteItem(itemId);
 
     dispatch({ type: DELETE_ITEM, payload: itemId });
   } catch (error) {

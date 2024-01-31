@@ -17,13 +17,13 @@ export const ItemForm = () => {
     if (itemToBeUpdated._id) {
       dispatch(itemInput({ ...itemToBeUpdated }));
     }
-  }, [itemToBeUpdated]);
+  }, [itemToBeUpdated, dispatch]);
 
   useEffect(() => {
     return function () {
       dispatch({ type: RESET_ITEM });
     };
-  }, []);
+  }, [dispatch]);
 
   const handleAddOrUpdate = () => {
     if (itemToBeUpdated._id) {
