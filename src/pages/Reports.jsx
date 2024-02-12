@@ -1,5 +1,4 @@
 import { useSelector } from "react-redux";
-import { CustomChart } from "../components/index";
 
 export const Reports = () => {
   const items = useSelector((state) => state.itemState.items);
